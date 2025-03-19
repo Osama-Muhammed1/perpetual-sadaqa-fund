@@ -1,82 +1,56 @@
-/* General Styles */
+/* Updated styles.css to move tabs to upper right and shrink logo */
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #e9e5db;
-    color: #2d3b2d;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 40px 0;
-}
-
-/* Section Blocks */
-.section {
-    background: linear-gradient(135deg, #d9ddc4, #f6f3e8);
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 24px;
-    color: #2d3b2d;
-}
-
-.section p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Button Styles */
-.button {
-    display: inline-block;
-    background: #76875e;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.button:hover {
-    background: #5a6845;
-}
-
-/* Navbar */
-nav {
+header {
     display: flex;
     justify-content: space-between;
-    background: #8b9b74;
-    padding: 15px 20px;
-    border-radius: 0 0 20px 20px;
+    align-items: center;
+    background: #f8f1e5;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    color: white;
+.logo img {
+    width: 100px; /* Shrinking the logo size */
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.navbar a {
     text-decoration: none;
-    padding: 10px;
+    color: #333;
+    font-size: 16px;
     font-weight: bold;
+    padding: 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+    color: #4b7b52;
 }
 
-/* Footer */
-footer {
-    text-align: center;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.block {
+    background: #e8dfc7;
     padding: 20px;
-    background: #76875e;
-    color: white;
-    border-radius: 20px 20px 0 0;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
