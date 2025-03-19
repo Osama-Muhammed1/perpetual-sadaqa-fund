@@ -1,56 +1,57 @@
-/* Updated styles.css to move tabs to upper right and shrink logo */
+/* Updated styles for block-style sections */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f8f1e5;
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #6A9C89;
 }
 
-.logo img {
-    width: 100px; /* Shrinking the logo size */
-    height: auto;
+.logo {
+    width: 100px; /* Shrunk the logo */
 }
 
 .navbar {
     display: flex;
     gap: 20px;
     position: absolute;
+    top: 20px;
     right: 20px;
-    top: 15px;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
+    color: white;
+    font-size: 18px;
     padding: 10px;
-}
-
-.navbar a:hover {
-    color: #4b7b52;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .block {
-    background: #e8dfc7;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.block h2 {
+    color: #3A5A40;
+}
+
+.block p {
+    color: #555;
 }
