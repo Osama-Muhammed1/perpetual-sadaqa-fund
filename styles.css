@@ -7,3 +7,33 @@ nav { flex: 3; text-align: right; }
 nav ul { list-style: none; padding: 0; margin: 0; }
 nav ul li { display: inline; margin: 0 10px; }
 nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+section {
+    padding: 50px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background-color: #f0f9f4; /* Light Green */
+    text-align: center;
+}
+
+#about {
+    background-color: #e6f2e6; /* Soft Green */
+}
+
+#projects {
+    background-color: #fdf6e3; /* Light Beige */
+}
+
+#donate {
+    background-color: #fff3e0; /* Soft Orange */
+    text-align: center;
+}
+
+#contact {
+    background-color: #e3f2fd; /* Light Blue */
+    text-align: center;
+}
